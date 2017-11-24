@@ -88,10 +88,6 @@ body {
 	margin-left: 0.2em;
 }
 
-.conA i {
-	font-size: 60px;
-}
-
 .conA p {
 	margin-top: 0;
 	margin-bottom: 0;
@@ -103,8 +99,8 @@ body {
 .conA p#tail {
 	margin-top: 100px;
 	margin-bottom: -70px;
+	font-size: 60px;
   line-height: 2em;
-  font-weight: lighter;
 }
 
 .conA_a h1 {
