@@ -30,13 +30,23 @@ $(function(){
 	});
 });
 </script>
+
+<SCRIPT LANGUAGE="JavaScript">
+function Frameset(page) {
+framecode = "<frameset rows='1*'>"
++ "<frame name=main src='" + page + "'>"
++ "</frameset>";
+
+page = window.open("");
+page.document.open();
+page.document.write(framecode);
+page.document.close();
+}
+</script>
+
 </head>
 
 <body>
-
-	<frameset rows="0,*" frameborder="NO" border="0" framespacing="0">
-	<frame src="index.html" framespacing="0" marginwidth='0' marginheight='0' frameborder='no' scrolling='no' noresize>
-	</frameset>
 
 <header>
 <div class="container">
@@ -51,7 +61,7 @@ $(function(){
 	<nav class="headB">
 		<ul>
 			<li><a href="#">TOP</a></li>
-			<li><a href="about.html">도자위 소개</a></li>
+			<li><a href="javascript:Frameset('about.html')">도자위 소개</a></li>
 			<li><a href="recruit.html">지원하기</a></li>
 			<li><a href="contact.html">Contact Us</a></li>
 		</ul>
